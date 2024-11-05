@@ -40,7 +40,7 @@ jobs:
       - name: build and push image
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./frontend
           push: true
           tags: ghcr.io/${{ github.repository }}/frontend:latest
 
