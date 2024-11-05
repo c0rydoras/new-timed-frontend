@@ -1,0 +1,34 @@
+<div class="flex flex-row justify-between" ...attributes>
+  <div><MagicLinkBtn /></div>
+  <div class="flex flex-row mx-6 btn-group">
+    <button
+      type="button"
+      data-test-previous
+      title="Previous day"
+      class="btn btn-default"
+      {{on "click" this.setPrevious}}
+    >
+      <FaIcon @icon="arrow-left" @prefix="fas" />
+    </button>
+    <button
+      type="button"
+      data-test-today
+      title="Today"
+      class="btn btn-default"
+      {{on "click" this.setToday}}
+    >
+      Today
+    </button>
+    <button
+      type="button"
+      data-test-next
+      title="Next day"
+      class="btn btn-default"
+      {{on "click" this.setNext}}
+    >
+      <FaIcon @icon="arrow-right" @prefix="fas" />
+    </button>
+  </div>
+
+  <DatepickerButton @value={{@current}} @onChange={{@onChange}} />
+</div>

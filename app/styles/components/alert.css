@@ -1,0 +1,11 @@
+.ember-notify.alert-danger {
+  @apply bg-danger text-foreground-primary border-danger/80;
+}
+
+.ember-notify.alert-info {
+  @apply bg-primary text-foreground-primary border-primary/80;
+}
+
+.ember-notify.alert-success {
+  @apply bg-success text-foreground-primary border-success/80;
+}

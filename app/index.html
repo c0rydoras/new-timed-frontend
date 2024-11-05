@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <title>Timed</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{rootURL}}assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{rootURL}}assets/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="{{rootURL}}assets/favicon.ico" type="image/x-icon">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/timed.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body class="text-foreground bg-background">
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/timed.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
