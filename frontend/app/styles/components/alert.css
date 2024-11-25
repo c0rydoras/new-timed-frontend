@@ -1,15 +1,15 @@
-.alert {
-  @apply rounded p-4;
+.ember-notify.alert {
+  @apply rounded;
 }
 
-.alert-danger {
-  @apply bg-danger-light text-foreground-primary !border-danger/80;
+.ember-notify.alert-danger {
+  @apply bg-danger-light text-foreground-primary border-danger/80;
 }
 
-.alert-info {
-  @apply bg-primary text-foreground-primary !border-primary/80;
+.ember-notify.alert-info {
+  @apply bg-primary-light text-foreground-primary border-primary/80;
 }
 
-.alert-success {
-  @apply bg-success-light text-foreground-primary !border-success/80;
+.ember-notify.alert-success {
+  @apply bg-success-light text-foreground-primary border-success/80;
 }
